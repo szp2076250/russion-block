@@ -237,7 +237,7 @@ void CRussionblockView::OnStart()
 		- (rectClient.right - rectClient.left);
 	auto borderHeight = (rectWindow.bottom - rectWindow.top)
 		- (rectClient.bottom - rectClient.top);
-	AfxGetMainWnd()->SetWindowPos(NULL, 50, 50, MAX_COL*24, MAX_ROW * 24, SWP_NOMOVE);
+	AfxGetMainWnd()->SetWindowPos(NULL, 50, 50, (MAX_COL + 3 ) * 20 , (MAX_ROW + 5) * 20 , SWP_NOMOVE);
 
     CDC * pDC = GetDC();
     Game.Clear(pDC);
